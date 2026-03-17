@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fildubois — Menuisier artisan en Belgique | Cuisines, Châssis, Menuiserie sur mesure</title>
+  <meta name="description" content="Fildubois, menuisier artisan avec plus de 40 ans d'expérience. Cuisines sur mesure, châssis, menuiserie intérieure et extérieure, charpente. Devis gratuit dans toute la Belgique.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-inner">
+    <a href="index.html" class="site-logo">
+      <span class="site-logo__name">Fildubois</span>
+      <span class="site-logo__tagline">Menuiserie &amp; Agencement · Belgique</span>
+    </a>
+    <ul class="nav-main">
+      <li class="nav-item"><a href="index.html" class="nav-link active">Accueil</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+      <li class="nav-item">
+        <a href="services.html" class="nav-link">Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="mega-menu">
+          <div class="mega-col">
+            <div class="mega-col__title">Services principaux</div>
+            <a href="service-carpentry.html">Menuiserie générale<span>Portes, escaliers, parquet</span></a>
+            <a href="service-kitchens.html">Cuisines sur mesure<span>Conception et installation</span></a>
+            <a href="service-chassis.html">Châssis &amp; fenêtres<span>Remplacement et pose</span></a>
+            <a href="service-cabinetmaking.html">Ébénisterie fine<span>Mobilier et agencement</span></a>
+            <a href="service-roofing.html">Charpente &amp; toiture<span>Neuf et rénovation</span></a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-col__title">Prestations complémentaires</div>
+            <a href="service-carpentry.html">Portes intérieures &amp; extérieures</a>
+            <a href="service-carpentry.html">Volets &amp; stores</a>
+            <a href="service-carpentry.html">Escaliers sur mesure</a>
+            <a href="service-carpentry.html">Parquet &amp; planchers</a>
+            <a href="service-cabinetmaking.html">Dressings &amp; rangements</a>
+            <a href="service-cabinetmaking.html">Mobilier créé sur mesure</a>
+            <a href="service-carpentry.html">Réparations agréées assurance</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="projects.html" class="nav-link">Réalisations <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <div class="dropdown-label">Portfolio</div>
+          <a href="projects.html">Toutes les réalisations</a>
+          <a href="before-after.html">Avant / Après</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="testimonials.html" class="nav-link">Témoignages</a></li>
+      <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+      <li class="nav-item"><a href="service-area.html" class="nav-link">Intervention</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active">FR</button>
+        <button class="lang-btn">NL</button>
+        <button class="lang-btn">EN</button>
+      </div>
+      <a href="tel:+32477772242" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        +32 477 77 22 42
+      </a>
+      <a href="contact.html" class="btn btn--primary btn--sm">Devis gratuit</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="mobile-nav-link">Accueil</a>
+  <a href="about.html" class="mobile-nav-link">À propos</a>
+  <button class="mobile-sub-toggle">Services <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+  <div class="mobile-accordion mobile-nav-sub">
+    <a href="services.html">Tous les services</a>
+    <a href="service-carpentry.html">Menuiserie générale</a>
+    <a href="service-kitchens.html">Cuisines sur mesure</a>
+    <a href="service-chassis.html">Châssis &amp; fenêtres</a>
+    <a href="service-cabinetmaking.html">Ébénisterie fine</a>
+    <a href="service-roofing.html">Charpente &amp; toiture</a>
+  </div>
+  <a href="projects.html" class="mobile-nav-link">Réalisations</a>
+  <a href="before-after.html" class="mobile-nav-link">Avant / Après</a>
+  <a href="testimonials.html" class="mobile-nav-link">Témoignages</a>
+  <a href="faq.html" class="mobile-nav-link">FAQ</a>
+  <a href="service-area.html" class="mobile-nav-link">Zone d'intervention</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+  <div class="mobile-nav-ctas">
+    <a href="contact.html" class="btn btn--primary">Demander un devis gratuit</a>
+    <a href="tel:+32477772242" class="btn btn--outline">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+      +32 477 77 22 42
+    </a>
+  </div>
+  <div style="display:flex;gap:8px;margin-top:24px;">
+    <button class="lang-btn active" style="background:var(--color-beige);padding:8px 16px;border-radius:4px;font-size:.8rem;font-weight:600;">FR</button>
+    <button class="lang-btn" style="background:var(--color-beige);padding:8px 16px;border-radius:4px;font-size:.8rem;">NL</button>
+    <button class="lang-btn" style="background:var(--color-beige);padding:8px 16px;border-radius:4px;font-size:.8rem;">EN</button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__eyebrow">Artisan menuisier · Belgique</div>
+      <h1>L'art du bois façonné <em>sur mesure</em>, partout en Belgique</h1>
+      <p class="hero__sub">Cuisines, châssis, menuiserie intérieure et extérieure, ébénisterie fine et charpente. Un artisan de confiance qui se déplace chez vous avec 40 ans de savoir-faire.</p>
+      <div class="hero__ctas">
+        <a href="contact.html" class="btn btn--primary btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Devis gratuit
+        </a>
+        <a href="tel:+32477772242" class="btn btn--outline-light btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          Appeler maintenant
+        </a>
+      </div>
+      <div class="hero__trust">
+        <div class="hero__trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          40+ ans d'expérience
+        </div>
+        <div class="hero__trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Réparations agréées assurance
+        </div>
+        <div class="hero__trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Toute la Belgique
+        </div>
+        <div class="hero__trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Particuliers &amp; professionnels
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      Découvrir
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip">
+    <div class="container--wide">
+      <div class="trust-items">
+        <div class="trust-item">
+          <div class="trust-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div class="trust-item__text"><strong>40+ ans</strong><span>d'expérience artisanale</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+          <div class="trust-item__text"><strong>Agréé assurance</strong><span>réparations et sinistres</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div class="trust-item__text"><strong>Neuf &amp; rénovation</strong><span>construction et transformation</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+          <div class="trust-item__text"><strong>Toute la Belgique</strong><span>déplacement chez vous</span></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></div>
+          <div class="trust-item__text"><strong>Particuliers &amp; pros</strong><span>tous types de projets</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUMBERS -->
+  <section class="section section--beige">
+    <div class="container">
+      <div class="numbers-grid reveal">
+        <div class="number-item">
+          <span class="number-item__value" data-count="40" data-suffix="+">40+</span>
+          <span class="number-item__label">Années d'expérience</span>
+        </div>
+        <div class="number-item">
+          <span class="number-item__value" data-count="500" data-suffix="+">500+</span>
+          <span class="number-item__label">Projets réalisés</span>
+        </div>
+        <div class="number-item">
+          <span class="number-item__value" data-count="100" data-suffix="%">100%</span>
+          <span class="number-item__label">Sur mesure</span>
+        </div>
+        <div class="number-item">
+          <span class="number-item__value" data-count="10" data-suffix="">10</span>
+          <span class="number-item__label">Provinces couvertes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <div class="intro__image reveal-left">
+          <img src="css/Images/artisan en action.webp" alt="Artisan menuisier Fildubois au travail" loading="lazy">
+          <div class="intro__badge">
+            <strong data-count="40" data-suffix="+">40+</strong>
+            <span>ans d'expérience</span>
+          </div>
+        </div>
+        <div class="intro__content reveal-right">
+          <span class="eyebrow">Notre histoire</span>
+          <h2>Un artisan de confiance à votre service depuis plus de 40 ans</h2>
+          <p class="lead">Fildubois, c'est l'histoire d'un artisan passionné qui a fait du bois sa vocation. Depuis plus de quatre décennies, nous apportons notre savoir-faire directement chez vous, dans toute la Belgique.</p>
+          <p>Chaque projet est unique. Nous prenons le temps d'écouter vos besoins, de comprendre votre espace et de vous proposer des solutions sur mesure qui allient esthétique, durabilité et fonctionnalité.</p>
+          <p>Qu'il s'agisse d'une cuisine entièrement conçue sur mesure, du remplacement de vos châssis, de la création d'un escalier, ou de la réparation de menuiseries endommagées, Fildubois est l'interlocuteur fiable que vous méritez.</p>
+          <a href="about.html" class="btn btn--outline">
+            En savoir plus sur Fildubois
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--beige">
+    <div class="container">
+      <div class="section-title section-title--center reveal">
+        <span class="eyebrow">Ce que nous faisons</span>
+        <h2>Nos services</h2>
+        <div class="divider"></div>
+        <p>De la menuiserie générale à l'ébénisterie fine, en passant par la pose de châssis ou la construction de charpente — Fildubois maîtrise l'ensemble des métiers du bois.</p>
+      </div>
+      <div class="grid-3">
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-card__image">
+            <img src="css/Images/cuisine 1.jpg" alt="Cuisines sur mesure" loading="lazy">
+            <span class="service-card__cat">Phare</span>
+          </div>
+          <div class="service-card__body">
+            <h3>Cuisines sur mesure</h3>
+            <p>Conception, fabrication et pose de cuisines entièrement personnalisées. Du plan à la finition, chaque détail est pensé pour votre espace et votre style de vie.</p>
+            <a href="service-kitchens.html" class="service-card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-card__image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Châssis et fenêtres" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>Châssis &amp; Fenêtres</h3>
+            <p>Remplacement, réparation et pose de châssis en bois, PVC ou aluminium. Isolation thermique et phonique optimisée pour votre confort quotidien.</p>
+            <a href="css/Images/chassis1.jpg" class="service-card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-card__image">
+            <img src="css/Images/safe bois.jpg" alt="Menuiserie générale" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>Menuiserie générale</h3>
+            <p>Portes, volets, escaliers, parquet, dressings et rangements. Tout ce qui touche au bois dans votre habitation, réalisé avec soin et précision.</p>
+            <a href="service-carpentry.html" class="service-card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-card__image">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="Ébénisterie fine" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>Ébénisterie fine</h3>
+            <p>Mobilier créé sur mesure, bibliothèques encastrées, meubles TV, rangements personnalisés. L'ébénisterie haut de gamme adaptée à votre intérieur.</p>
+            <a href="service-cabinetmaking.html" class="service-card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-card__image">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Charpente et toiture" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>Charpente &amp; Toiture</h3>
+            <p>Construction, rénovation et réparation de charpentes bois. Toitures neuves, remplacement de pièces et traitement des charpentes existantes.</p>
+            <a href="service-roofing.html" class="service-card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-card__image">
+            <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80" alt="Dressings et rangements" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>Dressings &amp; Rangements</h3>
+            <p>Conception et réalisation de dressings, placards et espaces de rangement sur mesure. Optimisation de chaque centimètre de votre espace.</p>
+            <a href="service-cabinetmaking.html" class="service-card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-48 reveal">
+        <p style="color:var(--color-text-light);margin-bottom:12px;font-size:.88rem;">Et bien d'autres prestations disponibles :</p>
+        <div class="sub-services" style="justify-content:center;">
+          <span class="sub-service-tag">Escaliers sur mesure</span>
+          <span class="sub-service-tag">Parquet &amp; planchers</span>
+          <span class="sub-service-tag">Portes intérieures</span>
+          <span class="sub-service-tag">Volets</span>
+          <span class="sub-service-tag">Aménagement intérieur</span>
+          <span class="sub-service-tag">Mobilier TV</span>
+          <span class="sub-service-tag">Menuiserie extérieure</span>
+          <span class="sub-service-tag">Réparations sinistres</span>
+        </div>
+        <a href="services.html" class="btn btn--outline mt-32">Voir tous les services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPAIR BANNER -->
+  <section class="repair-banner">
+    <div class="container">
+      <div class="repair-banner__inner">
+        <div class="repair-banner__text reveal-left">
+          <span class="eyebrow">Intervention d'urgence</span>
+          <h2>Réparations agréées assurance</h2>
+          <p>Vous avez subi un dommage — effraction, tempête, sinistre ? Fildubois est reconnu par les compagnies d'assurance pour les travaux de remise en état. Nous intervenons rapidement, établissons les devis nécessaires et gérons la communication avec votre assureur.</p>
+        </div>
+        <div class="repair-banner__ctas reveal-right">
+          <a href="contact.html" class="btn btn--primary btn--lg">Signaler une urgence</a>
+          <a href="tel:+32477772242" class="btn btn--outline-light btn--lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            Appeler maintenant
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Nos réalisations</span>
+        <h2>Projets récents</h2>
+        <div class="divider"></div>
+        <p>Quelques exemples de ce que nous avons réalisé pour nos clients en Belgique.</p>
+      </div>
+      <div class="projects-grid reveal">
+        <div class="project-card project-card--large">
+          <img class="project-card__img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80" alt="Cuisine sur mesure réalisée par Fildubois" loading="lazy">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__info">
+            <h4>Cuisine contemporaine</h4>
+            <span>Bruxelles · Cuisine sur mesure</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="project-card__img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Châssis bois" loading="lazy">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__info">
+            <h4>Remplacement châssis</h4>
+            <span>Liège · Châssis &amp; fenêtres</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="project-card__img" src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=700&q=80" alt="Escalier sur mesure" loading="lazy">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__info">
+            <h4>Escalier contemporain</h4>
+            <span>Gand · Menuiserie sur mesure</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-48 reveal">
+        <a href="projects.html" class="btn btn--outline">Voir toutes nos réalisations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section--beige">
+    <div class="container">
+      <div class="section-title section-title--center reveal">
+        <span class="eyebrow">Galerie</span>
+        <h2>Détails de nos finitions</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=90" data-alt="Cuisine sur mesure">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=75" alt="Cuisine sur mesure" loading="lazy">
+          <div class="gallery-item__overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=1200&q=90" data-alt="Rangements sur mesure">
+          <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=400&q=75" alt="Rangements" loading="lazy">
+          <div class="gallery-item__overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=90" data-alt="Mobilier salon">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=75" alt="Mobilier salon" loading="lazy">
+          <div class="gallery-item__overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=1200&q=90" data-alt="Escalier en bois">
+          <img src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=400&q=75" alt="Escalier bois" loading="lazy">
+          <div class="gallery-item__overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=90" data-alt="Châssis fenêtres bois">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=75" alt="Châssis bois" loading="lazy">
+          <div class="gallery-item__overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=90" data-alt="Charpente toiture">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=75" alt="Charpente" loading="lazy">
+          <div class="gallery-item__overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=1200&q=90" data-alt="Atelier menuiserie">
+          <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=400&q=75" alt="Atelier bois" loading="lazy">
+          <div class="gallery-item__overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=90" data-alt="Dressing sur mesure">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&q=75" alt="Dressing" loading="lazy">
+          <div class="gallery-item__overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div>
+        </div>
+      </div>
+      <div class="text-center mt-32 reveal">
+        <a href="projects.html" class="btn btn--outline">Voir la galerie complète</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE AFTER -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title section-title--center reveal">
+        <span class="eyebrow">Transformations</span>
+        <h2>Avant / Après</h2>
+        <div class="divider"></div>
+        <p>La différence que fait un vrai artisan. Découvrez quelques-unes de nos transformations les plus marquantes.</p>
+      </div>
+      <div class="grid-2">
+        <div class="ba-card reveal reveal-delay-1">
+          <div class="ba-card__images">
+            <div class="ba-card__side">
+              <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&q=75" alt="Cuisine avant rénovation" loading="lazy">
+              <span class="ba-card__label">Avant</span>
+            </div>
+            <div class="ba-card__side">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=75" alt="Cuisine après rénovation" loading="lazy">
+              <span class="ba-card__label ba-card__label--after">Après</span>
+            </div>
+          </div>
+          <div class="ba-card__body">
+            <h4>Rénovation cuisine complète</h4>
+            <p>Transformation totale d'une cuisine des années 90 en un espace contemporain et fonctionnel, entièrement réalisé sur mesure.</p>
+          </div>
+        </div>
+        <div class="ba-card reveal reveal-delay-2">
+          <div class="ba-card__images">
+            <div class="ba-card__side">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=500&q=75" alt="Châssis avant remplacement" loading="lazy">
+              <span class="ba-card__label">Avant</span>
+            </div>
+            <div class="ba-card__side">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=75" alt="Châssis après remplacement" loading="lazy">
+              <span class="ba-card__label ba-card__label--after">Après</span>
+            </div>
+          </div>
+          <div class="ba-card__body">
+            <h4>Remplacement châssis &amp; fenêtres</h4>
+            <p>Remplacement des châssis vétustes par des fenêtres en bois double vitrage — meilleur confort thermique et nouvelle esthétique.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-32 reveal">
+        <a href="before-after.html" class="btn btn--outline">Voir toutes les transformations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--beige">
+    <div class="container">
+      <div class="section-title section-title--center reveal">
+        <span class="eyebrow">Ce qu'ils disent</span>
+        <h2>Témoignages clients</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="testimonials-carousel reveal">
+        <div class="testimonials-track">
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote>Fildubois a réalisé notre cuisine sur mesure avec un soin exceptionnel. Du premier contact au placement final, tout s'est déroulé dans la bonne humeur et le professionnalisme. Le résultat dépasse toutes nos attentes — notre cuisine est devenue l'âme de notre maison.</blockquote>
+              <div class="testimonial-author">
+                <strong>Marie &amp; Thomas D.</strong>
+                <span>Cuisine sur mesure · Bruxelles</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote>Suite à un dégât des eaux, Fildubois est intervenu en urgence pour réparer notre plancher et notre porte d'entrée. Travail impeccable, devis clair pour l'assurance, et délai tenu. Je recommande sans hésiter à quiconque cherche un artisan fiable en Belgique.</blockquote>
+              <div class="testimonial-author">
+                <strong>Jacques M.</strong>
+                <span>Réparation sinistre · Liège</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote>L'escalier qu'il a fabriqué pour notre maison en rénovation est une véritable pièce maîtresse. Chaque marche est parfaite, les assemblages sont invisibles et le rendu final est magnifique. C'est le travail d'un vrai artisan qui aime son métier.</blockquote>
+              <div class="testimonial-author">
+                <strong>Sophie &amp; Paul V.</strong>
+                <span>Escalier sur mesure · Gand</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-btn" data-carousel-prev aria-label="Précédent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="carousel-dots">
+            <button class="carousel-dot active"></button>
+            <button class="carousel-dot"></button>
+            <button class="carousel-dot"></button>
+          </div>
+          <button class="carousel-btn" data-carousel-next aria-label="Suivant">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="text-center mt-32 reveal">
+        <a href="testimonials.html" class="btn btn--outline">Lire tous les témoignages</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <div class="reveal-left">
+          <span class="eyebrow">Pourquoi Fildubois</span>
+          <h2>Un artisan à votre écoute, de A à Z</h2>
+          <div class="divider"></div>
+          <p class="lead" style="margin-top:16px;">Choisir Fildubois, c'est choisir la tranquillité d'esprit. Nous gérons votre projet dans son intégralité, depuis la première visite jusqu'à la livraison finale.</p>
+        </div>
+        <div class="reveal-right">
+          <div class="why-item">
+            <div class="why-item__num">01</div>
+            <div class="why-item__content">
+              <h4>Expérience de 40 ans</h4>
+              <p>Un savoir-faire forgé au fil de centaines de projets, du plus simple au plus complexe. Aucune situation ne nous surprend.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item__num">02</div>
+            <div class="why-item__content">
+              <h4>Déplacement chez vous</h4>
+              <p>Pas de showroom à visiter — nous venons chez vous pour mesurer, conseiller et installer. Votre confort est notre priorité.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item__num">03</div>
+            <div class="why-item__content">
+              <h4>Fabrication 100 % sur mesure</h4>
+              <p>Chaque pièce est fabriquée spécifiquement pour votre espace et vos besoins. Pas de prêt-à-poser, uniquement du sur-mesure.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item__num">04</div>
+            <div class="why-item__content">
+              <h4>Agréé assurance</h4>
+              <p>Nos interventions sont reconnues par les compagnies d'assurance belges. Nous vous accompagnons dans toutes vos démarches.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-item__num">05</div>
+            <div class="why-item__content">
+              <h4>Devis gratuit et transparent</h4>
+              <p>Vous recevez un devis clair, détaillé et sans surprise avant tout début de travaux. Zéro mauvaise surprise.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="section section--beige">
+    <div class="container">
+      <div class="grid-2">
+        <div class="reveal-left">
+          <span class="eyebrow">Zone d'intervention</span>
+          <h2>Toute la Belgique, partout chez vous</h2>
+          <div class="divider"></div>
+          <p class="lead" style="margin-top:16px;">Artisan indépendant et mobile, Fildubois se déplace dans les 10 provinces belges pour réaliser vos projets, en neuf comme en rénovation.</p>
+          <p style="margin:16px 0;color:var(--color-text-light);">Que vous soyez en région bruxelloise, en Wallonie ou en Flandre, nous nous adaptons à votre localisation. Les projets d'envergure peuvent faire l'objet d'un devis intégrant les frais de déplacement.</p>
+          <div class="provinces-list" style="margin-top:24px;">
+            <span class="province-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4"/></svg> Bruxelles</span>
+            <span class="province-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4"/></svg> Brabant Wallon</span>
+            <span class="province-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4"/></svg> Brabant Flamand</span>
+            <span class="province-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4"/></svg> Liège</span>
+            <span class="province-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4"/></svg> Namur</span>
+            <span class="province-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4"/></svg> Hainaut</span>
+            <span class="province-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4"/></svg> Luxembourg</span>
+            <span class="province-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4"/></svg> Anvers</span>
+            <span class="province-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4"/></svg> Flandre orientale</span>
+            <span class="province-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M9 12l2 2 4-4"/></svg> Flandre occidentale</span>
+          </div>
+          <a href="service-area.html" class="btn btn--outline mt-32">En savoir plus sur nos déplacements</a>
+        </div>
+        <div class="reveal-right">
+          <div class="area-map">
+            <div class="area-map__placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <p style="font-size:.9rem;margin-bottom:8px;">Carte de Belgique</p>
+              <p style="font-size:.8rem;">Intervention dans toutes les provinces</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container--narrow">
+      <div class="section-title section-title--center reveal">
+        <span class="eyebrow">Questions fréquentes</span>
+        <h2>Vos questions, nos réponses</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="reveal">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Comment obtenir un devis ?</h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="faq-answer">Il vous suffit de nous contacter par téléphone, email ou via le formulaire en ligne. Nous convenons ensemble d'un rendez-vous à votre domicile ou sur le chantier pour évaluer votre projet. Le devis est établi gratuitement et sans engagement.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Intervenez-vous dans toute la Belgique ?</h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="faq-answer">Oui, Fildubois se déplace dans l'ensemble du territoire belge — Bruxelles, Wallonie et Flandre. Nous nous adaptons à votre localisation. Pour les projets situés à plus grande distance, les frais de déplacement seront précisés dans le devis.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Travaillez-vous aussi bien en neuf qu'en rénovation ?</h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="faq-answer">Absolument. Nos compétences couvrent aussi bien les nouvelles constructions que les projets de rénovation partielle ou complète. Que vous construisiez votre maison ou que vous souhaitiez moderniser votre intérieur, Fildubois est à votre service.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Vous occupez-vous des réparations suite à sinistre ?</h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="faq-answer">Oui. Nos interventions en réparation sont agréées par les compagnies d'assurance belges. Nous établissons les devis dans le format requis et pouvons communiquer directement avec votre assureur pour faciliter la gestion du sinistre.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Quels délais faut-il prévoir pour un projet ?</h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="faq-answer">Les délais varient selon la nature et l'ampleur du projet. Une réparation simple peut être planifiée rapidement, tandis qu'une cuisine sur mesure nécessite plusieurs semaines de fabrication. Nous vous communiquons toujours un planning précis dès l'acceptation du devis.</div>
+        </div>
+      </div>
+      <div class="text-center mt-32 reveal">
+        <a href="faq.html" class="btn btn--outline">Voir toutes les questions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE FORM -->
+  <section class="section quote-form-section">
+    <div class="container">
+      <div class="quote-form-wrapper">
+        <div class="quote-form-info reveal-left">
+          <span class="eyebrow">Devis gratuit</span>
+          <h2>Parlons de votre projet</h2>
+          <p>Décrivez-nous votre projet et nous vous recontacterons rapidement pour convenir d'un rendez-vous à votre domicile. Le devis est entièrement gratuit et sans engagement.</p>
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            <a href="tel:+32477772242">+32 477 77 22 42</a>
+          </div>
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="/cdn-cgi/l/email-protection#bfd9d6d3dbcaddd0d6ccffcbdad3dad1dacb91ddda"><span class="__cf_email__" data-cfemail="294f40454d5c4b46405a695d4c454c474c5d074b4c">[email&#160;protected]</span></a>
+          </div>
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Sur rendez-vous uniquement</span>
+          </div>
+          <a href="https://wa.me/32477772242" target="_blank" rel="noopener" class="btn btn--outline-light" style="margin-top:24px;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Écrire sur WhatsApp
+          </a>
+        </div>
+        <div class="reveal-right">
+          <div class="form-card">
+            <form id="quoteForm" novalidate>
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="name">Nom complet *</label>
+                  <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+                  <span class="form-error">Veuillez entrer votre nom.</span>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Téléphone *</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+32 4xx xx xx xx" required>
+                  <span class="form-error">Veuillez entrer votre numéro.</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="vous@exemple.be" required>
+                <span class="form-error">Veuillez entrer un email valide.</span>
+              </div>
+              <div class="form-group">
+                <label for="project_type">Type de projet *</label>
+                <select id="project_type" name="project_type" required>
+                  <option value="">Sélectionnez un service...</option>
+                  <option>Cuisine sur mesure</option>
+                  <option>Châssis / Fenêtres</option>
+                  <option>Menuiserie générale</option>
+                  <option>Ébénisterie / Mobilier sur mesure</option>
+                  <option>Charpente / Toiture</option>
+                  <option>Escalier sur mesure</option>
+                  <option>Dressing / Rangement</option>
+                  <option>Réparation / Sinistre assurance</option>
+                  <option>Autre</option>
+                </select>
+                <span class="form-error">Veuillez sélectionner un type de projet.</span>
+              </div>
+              <div class="form-group">
+                <label for="message">Décrivez votre projet *</label>
+                <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet en quelques mots : type de travaux, surface approximative, délai souhaité..." required></textarea>
+                <span class="form-error">Veuillez décrire votre projet.</span>
+              </div>
+              <button type="submit" class="form-submit-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                Envoyer ma demande
+              </button>
+            </form>
+            <div class="form-success">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <h3>Demande envoyée !</h3>
+              <p>Merci pour votre message. Nous vous recontacterons dans les plus brefs délais pour convenir d'un rendez-vous.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="site-logo">
+          <span class="site-logo__name">Fildubois</span>
+          <span class="site-logo__tagline">Menuiserie &amp; Agencement · Belgique</span>
+        </a>
+        <p>Artisan menuisier indépendant avec plus de 40 ans d'expérience. Fabrication et pose sur mesure, rénovation, neuf et réparations agréées assurance dans toute la Belgique.</p>
+        <div>
+          <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:+32477772242">+32 477 77 22 42</a></div>
+          <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="/cdn-cgi/l/email-protection#f6909f9a928394999f85b682939a93989382d89493"><span class="__cf_email__" data-cfemail="7d1b141119081f12140e3d09181118131809531f18">[email&#160;protected]</span></a></div>
+          <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Sur rendez-vous · Toute la Belgique</span></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="service-carpentry.html">Menuiserie générale</a></li>
+          <li><a href="service-kitchens.html">Cuisines sur mesure</a></li>
+          <li><a href="service-chassis.html">Châssis &amp; fenêtres</a></li>
+          <li><a href="service-cabinetmaking.html">Ébénisterie fine</a></li>
+          <li><a href="service-roofing.html">Charpente &amp; toiture</a></li>
+          <li><a href="service-carpentry.html">Escaliers sur mesure</a></li>
+          <li><a href="service-cabinetmaking.html">Dressings &amp; rangements</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="projects.html">Réalisations</a></li>
+          <li><a href="before-after.html">Avant / Après</a></li>
+          <li><a href="testimonials.html">Témoignages</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="service-area.html">Zone d'intervention</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Votre projet</h4>
+        <div class="footer-cta-box">
+          <p>Un projet en tête ? Contactez-nous pour un devis personnalisé et gratuit.</p>
+          <a href="contact.html" class="btn btn--primary btn--sm" style="width:100%;justify-content:center;margin-bottom:10px;">Devis gratuit</a>
+          <a href="https://wa.me/32477772242" target="_blank" rel="noopener" class="btn btn--outline-light btn--sm" style="width:100%;justify-content:center;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Fildubois — Menuisier artisan en Belgique. Tous droits réservés.</span>
+      <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-buttons">
+  <a href="https://wa.me/32477772242" target="_blank" rel="noopener" class="float-btn float-btn--whatsapp" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="float-label">WhatsApp</span>
+  </a>
+  <a href="tel:+32477772242" class="float-btn float-btn--phone" aria-label="Appeler">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+    <span class="float-label">Appeler</span>
+  </a>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" aria-label="Fermer">&times;</button>
+  <img src="" alt="">
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
