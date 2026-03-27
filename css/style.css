@@ -153,6 +153,7 @@ p { font-size: 1rem; color: var(--color-text); }
   background: var(--color-copper);
   color: var(--color-white);
   border: 2px solid var(--color-copper);
+  border-radius: 8px;
 }
 .btn--primary:hover {
   background: var(--color-wood-dark);
@@ -1439,7 +1440,7 @@ p { font-size: 1rem; color: var(--color-text); }
   border-radius: var(--radius-md);
   padding: 20px;
 }
-.footer-cta-box p { font-size: 0.84rem; margin-bottom: 14px; }
+.footer-cta-box p { font-size: 0.84rem; margin-bottom: 14px; color: #fff; line-height: 1.6; }
 .footer-cta-box .btn { width: 100%; justify-content: center; }
 
 .footer-bottom {
@@ -1516,7 +1517,7 @@ p { font-size: 1rem; color: var(--color-text); }
   content: '';
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=1200&q=60') center/cover;
+  background: url('Images/bois\ travail.jpg') center/cover;
   opacity: 0.15;
 }
 .page-hero .container { position: relative; z-index: 1; }
@@ -1826,4 +1827,223 @@ p { font-size: 1rem; color: var(--color-text); }
   .btn--lg { padding: 15px 28px; font-size: 0.82rem; }
   .cta-banner { padding: 40px 0; }
   .number-item__value { font-size: 2.2rem; }
+}
+/* ============================================================
+   WOW GRID — animations cascade + parallax hover
+   ============================================================ */
+.wow-section { overflow: hidden; }
+
+.wow-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 14px;
+}
+
+.wow-item--hero { grid-row: span 2; }
+.wow-item--wide { grid-column: span 2; }
+
+/* Entrée animée — état initial caché */
+.wow-item {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(50px) scale(0.96);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
+}
+
+/* État visible après IntersectionObserver */
+.wow-item.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.wow-item:hover {
+  box-shadow: 0 24px 60px rgba(0,0,0,0.22);
+  z-index: 2;
+}
+
+/* Wrapper image pour parallax */
+.wow-img-wrap {
+  position: absolute;
+  inset: -8%;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.wow-item:hover .wow-img-wrap { transform: scale(1.08); }
+
+.wow-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay dégradé permanent discret + fort au hover */
+.wow-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 6, 2, 0.75) 0%,
+    rgba(10, 6, 2, 0.15) 50%,
+    transparent 100%
+  );
+  z-index: 1;
+  opacity: 0.6;
+  transition: opacity 0.4s ease;
+}
+.wow-item:hover::before { opacity: 1; }
+
+/* Infos toujours visibles en bas */
+.wow-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 22px 24px;
+  transform: translateY(8px);
+  transition: transform 0.4s ease;
+}
+.wow-item:hover .wow-info { transform: translateY(0); }
+
+.wow-tag {
+  display: inline-block;
+  background: var(--color-copper, #b07d4a);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 4px;
+  margin-bottom: 7px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.35s ease 0.05s, transform 0.35s ease 0.05s;
+}
+.wow-item:hover .wow-tag {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.wow-info h4 {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 3px;
+}
+
+.wow-info span {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transition: opacity 0.35s ease 0.1s;
+}
+.wow-item:hover .wow-info span { opacity: 1; }
+
+/* Ligne cuivrée animée */
+.wow-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 3px;
+  background: var(--color-copper, #b07d4a);
+  z-index: 3;
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.wow-item:hover::after { width: 100%; }
+
+/* Responsive */
+@media (max-width: 960px) {
+  .wow-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 240px 240px;
+  }
+  .wow-item--hero { grid-row: span 2; }
+  .wow-item--wide { grid-column: span 2; }
+}
+@media (max-width: 580px) {
+  .wow-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .wow-item { height: 240px; }
+  .wow-item--hero, .wow-item--wide { grid-row: span 1; grid-column: span 1; }
+}
+/* ============================================================
+   BELGIUM MAP — side by side layout
+   ============================================================ */
+.area-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+}
+.area-map-side {
+  background: #ede8e0;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+}
+#belgium-map { width: 100%; height: auto; display: block; }
+.bel-province {
+  fill: #c8a96e;
+  stroke: #fff;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: fill 0.2s ease, filter 0.2s ease;
+  animation: prov-in 0.5s ease both;
+}
+.bel-province:hover { fill: #8B4513; filter: url(#provglow); }
+@keyframes prov-in { from{opacity:0} to{opacity:1} }
+.bel-province:nth-child(2){animation-delay:.04s}
+.bel-province:nth-child(3){animation-delay:.08s}
+.bel-province:nth-child(4){animation-delay:.12s}
+.bel-province:nth-child(5){animation-delay:.16s}
+.bel-province:nth-child(6){animation-delay:.20s}
+.bel-province:nth-child(7){animation-delay:.24s}
+.bel-province:nth-child(8){animation-delay:.28s}
+.bel-province:nth-child(9){animation-delay:.32s}
+.bel-province:nth-child(10){animation-delay:.36s}
+.bel-province:nth-child(11){animation-delay:.40s}
+.bel-province:nth-child(12){animation-delay:.44s}
+.bel-label {
+  font-size: 12px;
+  font-family: sans-serif;
+  fill: #fff;
+  font-weight: 700;
+  text-anchor: middle;
+  pointer-events: none;
+}
+.bel-map-caption {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 10px;
+  letter-spacing: 0.06em;
+}
+@media(max-width:900px){
+  .area-layout { grid-template-columns: 1fr; }
+}
+
+.nav-cta-floating {
+  position: fixed;
+  right: 20px;
+  bottom: 50%;
+transform: translateY(50%);
+  z-index: 999;
+  border-radius: 50px;
+  box-shadow: 0 8px 30px rgba(176, 125, 74, 0.5);
+  padding: 12px 24px;
+  font-size: 0.78rem;
+}
+.nav-cta-floating:hover {
+  transform: translateY(calc(50% - 3px));
+  box-shadow: 0 12px 40px rgba(176, 125, 74, 0.7);
 }
