@@ -28,13 +28,20 @@
           </div>
         </div>
       </li>
-      <li class="nav-item"><a href="projects.html" class="nav-link">Réalisations</a></li>
+      <li class="nav-item">
+        <a href="projects.html" class="nav-link">Réalisations <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <div class="dropdown-label">Portfolio</div>
+          <a href="projects.html">Toutes les réalisations</a>
+          <a href="before-after.html">Avant / Après</a>
+        </div>
+      </li>
       <li class="nav-item"><a href="testimonials.html" class="nav-link">Témoignages</a></li>
       <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
-      <li class="nav-item"><a href="service-area.html" class="nav-link">Intervention</a></li>
+      <li class="nav-item"><a href="service-area.html" class="nav-link active">Intervention</a></li>
     </ul>
     <div class="nav-right">
-      <div class="lang-switcher"><button class="lang-btn active">FR</button><button class="lang-btn">NL</button><button class="lang-btn">EN</button></div>
+      <div class="lang-switcher"><a href="Service-area.html" class="lang-btn active">FR</a><a href="Service-area-nl.html" class="lang-btn">NL</a><a href="Service-area-en.html" class="lang-btn">EN</a></div>
       <a href="tel:+32477772242" class="nav-phone">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
         +32 477 77 22 42
@@ -87,42 +94,11 @@
     <a href="contact.html" class="btn btn--primary mt-32">Prendre rendez-vous</a>
   </div>
   <div class="reveal-right">
-    <div class="area-map-side">
-  <svg id="belgium-map" viewBox="30 30 740 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
-    <defs>
-      <filter id="provglow" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="4" result="blur"/>
-        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-      </filter>
-    </defs>
-    <path class="bel-province" data-name="Flandre occidentale" d="M55,52 L100,38 L155,33 L195,43 L230,62 L250,92 L252,127 L242,162 L218,190 L182,210 L143,223 L98,228 L63,215 L36,192 L20,160 L22,125 L38,88 Z"/>
-    <text class="bel-label" x="135" y="132">Flandre occ.</text>
-    <path class="bel-province" data-name="Flandre orientale" d="M250,92 L293,78 L343,70 L388,76 L413,98 L420,134 L413,170 L388,196 L348,210 L303,215 L263,210 L242,190 L242,162 L252,127 Z"/>
-    <text class="bel-label" x="330" y="148">Flandre or.</text>
-    <path class="bel-province" data-name="Anvers" d="M388,76 L443,60 L498,56 L546,63 L573,86 L580,122 L573,161 L550,188 L508,203 L466,208 L428,200 L413,170 L420,134 L413,98 Z"/>
-    <text class="bel-label" x="492" y="133">Anvers</text>
-    <path class="bel-province" data-name="Limbourg" d="M546,63 L608,53 L663,60 L706,83 L723,118 L726,158 L708,194 L670,213 L626,220 L583,213 L550,196 L550,188 L573,161 L580,122 L573,86 Z"/>
-    <text class="bel-label" x="630" y="140">Limbourg</text>
-    <path class="bel-province" data-name="Brabant Flamand" d="M413,170 L428,200 L433,233 L423,263 L398,280 L366,285 L338,273 L320,250 L323,223 L348,210 L388,196 Z"/>
-    <text class="bel-label" x="375" y="238">Brab. Fl.</text>
-    <path class="bel-province" data-name="Bruxelles" d="M398,258 L420,251 L428,268 L418,281 L398,281 L391,268 Z" style="fill:#7a3b10"/>
-    <text class="bel-label" x="410" y="270" style="font-size:10px">BXL</text>
-    <path class="bel-province" data-name="Brabant Wallon" d="M366,285 L398,281 L418,281 L428,268 L420,251 L433,233 L453,243 L466,273 L460,313 L433,340 L398,347 L366,333 L346,306 L346,285 Z"/>
-    <text class="bel-label" x="405" y="308">Brab. W.</text>
-    <path class="bel-province" data-name="Hainaut" d="M98,228 L143,223 L182,210 L218,210 L263,210 L303,215 L323,223 L320,250 L338,273 L346,285 L346,306 L366,333 L353,370 L316,400 L260,413 L193,415 L133,403 L83,373 L60,330 L60,275 L73,243 Z"/>
-    <text class="bel-label" x="215" y="323">Hainaut</text>
-    <path class="bel-province" data-name="Namur" d="M398,347 L433,340 L460,313 L498,300 L533,313 L556,353 L553,403 L520,443 L470,456 L420,450 L383,425 L366,393 L366,363 Z"/>
-    <text class="bel-label" x="460" y="388">Namur</text>
-    <path class="bel-province" data-name="Liège" d="M433,233 L466,208 L508,203 L550,196 L550,188 L583,213 L626,220 L670,213 L708,194 L738,223 L746,270 L733,328 L693,363 L643,380 L593,375 L556,353 L533,313 L498,300 L466,273 Z"/>
-    <text class="bel-label" x="610" y="288">Liège</text>
-    <path class="bel-province" data-name="Luxembourg" d="M470,456 L520,443 L553,403 L556,353 L593,375 L643,380 L693,363 L733,328 L758,380 L756,448 L716,505 L646,535 L566,543 L496,525 L466,493 Z"/>
-    <text class="bel-label" x="610" y="450">Luxembourg</text>
-    <g id="bel-tooltip" style="display:none;pointer-events:none;">
-      <rect rx="7" fill="#2c1a0e" opacity="0.93" width="210" height="38"/>
-      <text id="bel-tooltip-text" x="105" y="25" text-anchor="middle" fill="#fff" font-size="14" font-family="sans-serif" font-weight="700"></text>
-    </g>
-  </svg>
-  <p class="bel-map-caption">Survolez une province</p>
+    <div class="area-map-side" style="border-radius:16px;overflow:hidden;height:420px;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1345442.8!2d4.469936!3d50.503887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c17d64b93f0f9d%3A0x6f94697b6f90f964!2sBelgique!5e0!3m2!1sfr!2sbe!4v1234567890"
+    width="100%" height="100%" style="border:0;display:block;" allowfullscreen loading="lazy">
+  </iframe>
 </div>
   </div>
 </div></div></section>

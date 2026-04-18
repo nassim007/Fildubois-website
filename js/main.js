@@ -187,3 +187,20 @@
   });
 
 })();
+
+
+const ratingLabels = {
+  5: '★ Excellent — Je recommande vivement',
+  4: 'Très bien — Je suis satisfait',
+  3: 'Correct — Peut mieux faire',
+  2: 'Décevant',
+  1: 'Très décevant'
+};
+
+document.querySelectorAll('.star-rating input').forEach(input => {
+  input.addEventListener('change', (e) => {
+    const feedback = document.getElementById('ratingFeedback');
+    feedback.textContent = ratingLabels[e.target.value];
+    feedback.classList.add('visible');
+  });
+});
